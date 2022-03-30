@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <!--Add bootstrap title of site-->
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!--add white to text to go on black bar on top-->
+    <div class="bg-dark text-white p-2">
+        <span class="navbar-brand mlg-2">Bowlers</span>
+    </div>
+
+    <div class="row m-1 p-1">
+
+        <div id="team" class="col-3">
+           <vc:teams></vc:teams>
+        </div>
+
+        <div class="col-9">
+            <div>
+                @RenderBody()
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
